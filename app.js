@@ -1,12 +1,3 @@
-var livereload = require("livereload");
-var connectLiveReload = require("connect-livereload");
-const liveReloadServer = livereload.createServer();
-liveReloadServer.server.once("connection", () => {
-    setTimeout(() => {
-        liveReloadServer.refresh("/");
-    }, 100);
-});
-
 require("dotenv").config();
 var createError = require("http-errors");
 var express = require("express");
