@@ -6,8 +6,8 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "start": "nodemon ./bin/www",
-        "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run start",
+        "start": "node ./bin/www",
+        "serverstart": "DEBUG=express-locallibrary-tutorial:* nodemon ./bin/www",
         "scss": "sass --watch src/scss/ public/styles/main.css"
     },
     "dependencies": {
