@@ -1,6 +1,5 @@
 var Item = require("../modules/item");
 var Category = require("../modules/category");
-var async = require("async");
 var { body, validationResult } = require("express-validator");
 var mongoose = require("mongoose");
 exports.listAllItems = (req, res, next) => {

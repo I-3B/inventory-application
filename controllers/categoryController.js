@@ -2,7 +2,6 @@ const Category = require("../modules/category");
 var { body, validationResult } = require("express-validator");
 var async = require("async");
 const Item = require("../modules/item");
-const mongoose = require("mongoose");
 exports.listAllCategories = (req, res, next) => {
     Category.find()
         .sort("name")

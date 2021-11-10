@@ -19,7 +19,6 @@ var indexRouter = require("./routes/index");
 var categoryRouter = require("./routes/categoryRouter");
 var itemRouter = require("./routes/itemRouter");
 var app = express();
-app.use(connectLiveReload());
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

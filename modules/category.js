@@ -1,6 +1,4 @@
 var mongoose = require("mongoose");
-const { restart } = require("nodemon");
-var Item = require("../modules/item");
 
 var Schema = mongoose.Schema;
 var CategorySchema = new Schema(
