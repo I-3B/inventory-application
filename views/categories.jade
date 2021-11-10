@@ -1,0 +1,9 @@
+extends layout 
+block style
+  link(rel="stylesheet", href="/stylesheets/list.css")
+block content 
+  ul.list
+    for category in categories 
+      li.list-cat
+        a(href=category.url)
+          h3 #{category.name}

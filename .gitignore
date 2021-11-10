@@ -1,0 +1,4 @@
+mongo-config.sh
+.vscode
+node_modules/
+.env

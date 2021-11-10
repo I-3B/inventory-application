@@ -1,0 +1,31 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: linear-gradient(45deg, rgb(0, 0, 175), rgb(163, 0, 0));
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.layout-header {
+    background-color: rgba(199, 199, 199, 0.39);
+    display: flex;
+    font-size: 20px;
+}
+.layout-header h1 {
+    color: #ff3c00;
+    margin: auto;
+    flex: 1;
+}
+.layout-header a {
+    margin: 5px;
+    display: block;
+    background-color: rgb(34, 34, 34);
+    padding: 0.3em;
+    border-radius: 5px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.5s, text-decoration 0.5s;
+}
+.layout-header a:hover {
+    text-decoration: underline;
+    color: #ff5f20;
+}

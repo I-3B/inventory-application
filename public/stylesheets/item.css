@@ -1,0 +1,50 @@
+.item-card-alone {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 60%;
+    margin: 3rem auto;
+    padding: 3rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.item-card-alone h3 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.item-card-alone p {
+    font-size: 3rem;
+}
+.item-card-alone a {
+    color: #ff3c00;
+}
+.colored {
+    color: rgb(98, 255, 7);
+}
+.buttons {
+    min-width: fit-content;
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.edit {
+    background: url("/images/edit.png");
+}
+.delete {
+    background: url("/images/delete.png");
+}
+.edit,
+.delete {
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    background-size: cover;
+}

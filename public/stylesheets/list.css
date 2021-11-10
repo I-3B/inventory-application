@@ -1,0 +1,85 @@
+.list {
+    padding: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+.list-item {
+    background-color: rgba(255, 255, 255, 0.514);
+    width: 25rem;
+    display: block;
+    border-radius: 6px;
+    transition: background-color 0.5s;
+}
+.list-item:hover {
+    background-color: rgba(255, 255, 255, 0.637);
+}
+.list-item a {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2em;
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    height: 20rem;
+}
+.list-item h3 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2rem;
+}
+.list-item p {
+    font-size: 1.7rem;
+}
+
+.list-cat {
+    background-color: rgba(255, 255, 255, 0.527);
+    border-radius: 6px;
+    transition: background-color 0.5s;
+}
+.list-cat a {
+    display: block;
+    font-size: 3rem;
+    color: rgb(34, 34, 34);
+    text-align: center;
+    padding: 5rem;
+    text-decoration: none;
+}
+.list-cat:hover {
+    background-color: rgba(255, 255, 255, 0.644);
+}
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+}
+.banner {
+    color: beige;
+    font-size: 5rem;
+    text-align: center;
+    width: 100%;
+}
+.buttons {
+    min-width: fit-content;
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.edit {
+    background: url("/images/edit.png");
+}
+.delete {
+    background: url("/images/delete.png");
+}
+.edit,
+.delete {
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+    background-size: cover;
+}

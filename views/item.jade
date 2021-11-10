@@ -1,0 +1,15 @@
+extends layout
+block style 
+  link(rel="stylesheet", href="/stylesheets/item.css")
+block content 
+  .item-card-alone
+    h3 #{item.name}
+    p category: 
+      a(href=item.category.url) #{item.category.name}
+    p in stock: 
+      span.colored #{item.stock}
+    p price: 
+      span.colored $#{item.price} 
+    .buttons 
+      a.edit(title="edit",href='#{item.url}/update')
+      a.delete(title="delete",href="#{item.url}/delete") 

@@ -1,0 +1,37 @@
+extends layout 
+
+block style 
+  link(rel="stylesheet", href="/stylesheets/form.css")
+block content 
+  form(method='post',action='/item/create')
+    h3= title
+    label(for="name") Component name:
+    input#name(name='name',maxLength=100, type="text", placeholder="Intel i7-10750H...",value=( (JSON.stringify(item) === '{}') ? "" :item.name), required)
+    label(for='category') Component category: 
+    select#category(type='select' ,name='category' ,required)
+      if JSON.stringify(item) === '{}'
+        option(value="" ,disabled, selected) Choose category...
+      else 
+        option(value="" ,disabled) Choose category...
+      each category in categories
+        if JSON.stringify(item) !== '{}'
+          if (item.category.toString())===(category._id.toString())
+            option(value= "#{category._id}", selected) #{category.name}
+        else 
+          option(value= "#{category._id}") #{category.name}
+    label(for="price") Component price: 
+    input#price(name='price', type="number",placeholder="394.99",step="0.01", value=((JSON.stringify(item) === '{}') ? "" : item.price), required)
+    label(for="stock") Component in stock: 
+    input#stock(name='stock', type="number" ,placeholder="15",value=(JSON.stringify(item) === '{}') ? "" : item.stock) ,required)
+    label(for="password") Component password (you will need it if you want to delete or update this item): 
+    input#password(name='password',maxLength=8, type="password" ,value=( (JSON.stringify(item) === '{}')? "" : item.password), required)
+    if errors.length!==0
+      ul.errors
+        for error in errors
+          if error.msg===undefined
+            li *#{error}
+          else 
+            li *#{error.msg}
+    input(type="submit",value="Add")
+
+

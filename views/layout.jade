@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/reset.css')
+    link(rel='stylesheet', href='/stylesheets/layout.css')
+    block style 
+  body
+    header.layout-header
+      h1 PC Master Race Store
+      a(href="/category") All categories
+      a(href="/item") All items
+      a(href="/category/create") Add a Category 
+      a(href="/item/create") Add a item     
+    block content

@@ -1,0 +1,24 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 40em;
+    padding: 2em 1em;
+    background-color: rgba(5, 5, 5, 0.521);
+    color: white;
+    border-radius: 6px;
+    margin: 3em auto;
+    gap: 10px;
+    position: relative;
+}
+form h3 {
+    position: absolute;
+    font-size: 20px;
+    top: -10px;
+}
+input[type="submit"] {
+    width: 50%;
+    margin: auto;
+}
+.errors {
+    color: tomato;
+}
